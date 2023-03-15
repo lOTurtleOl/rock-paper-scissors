@@ -1,19 +1,20 @@
+const computerSelection = getComputerChoice();
+const playerSelection = getPlayerChoice();
 
-
-function computerSelection() {
-    let getComputerChoice = Math.floor(Math.random() * 3);
-    if(getComputerChoice == 2) {
+function getComputerChoice() {
+    let randomNumber = Math.floor(Math.random() * 3);
+    if(randomNumber == 2) {
       return "rock";
-    } else if (getComputerChoice == 1) {
+    } else if (randomNumber == 1) {
       return "paper";
     } else {
       return "scissors";
     }
 }
 
-function playerSelection() {
-  let getPlayerChoice = (prompt("rock paper scissors"));
-  return getPlayerChoice.toLowerCase();
+function getPlayerChoice() {
+  let answer = (prompt("rock paper scissors"));
+  return answer.toLowerCase();
 }
 
 
@@ -24,8 +25,9 @@ function playerSelection() {
 
 function playRound(playerSelection, computerSelection) {
   if (playerSelection === computerSelection) {
-
+    alert("It's a tie, try again");
   }
-
 }
+
+console.log(computerSelection);
 
