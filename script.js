@@ -3,11 +3,11 @@
 function computerSelection() {
     let getComputerChoice = Math.floor(Math.random() * 3);
     if(getComputerChoice == 2) {
-      console.log("Rock");
+      return "Rock";
     } else if (getComputerChoice == 1) {
-      console.log("Paper");
+      return "Paper";
     } else {
-      console.log("Scissors");
+      return "Scissors";
     }
 }
 
@@ -18,7 +18,7 @@ function computerSelection() {
   //  return computerSelection;
 // }; - This was my original code for the above and didn't work
 
-
+console.log(computerSelection());
 
 
 
