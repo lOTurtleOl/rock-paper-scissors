@@ -3,14 +3,18 @@
 function computerSelection() {
     let getComputerChoice = Math.floor(Math.random() * 3);
     if(getComputerChoice == 2) {
-      return "Rock";
+      return "rock";
     } else if (getComputerChoice == 1) {
-      return "Paper";
+      return "paper";
     } else {
-      return "Scissors";
+      return "scissors";
     }
 }
 
+function playerSelection() {
+  let getPlayerChoice = (prompt("rock paper scissors"));
+  return getPlayerChoice.toLowerCase();
+}
 
 
 // let computerSelection = function getComputerChoice() {
@@ -18,7 +22,10 @@ function computerSelection() {
   //  return computerSelection;
 // }; - This was my original code for the above and didn't work
 
-console.log(computerSelection());
+function playRound(playerSelection, computerSelection) {
+  if (playerSelection === computerSelection) {
 
+  }
 
+}
 
