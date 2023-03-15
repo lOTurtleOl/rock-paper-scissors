@@ -26,8 +26,26 @@ function getPlayerChoice() {
 function playRound(playerSelection, computerSelection) {
   if (playerSelection === computerSelection) {
     alert("It's a tie, try again");
+  } else if (playerSelection == "paper") {
+    if (computerSelection == "rock") {
+      alert("You win, paper beats rock!")
+    } else {
+      alert("You lose, scissors beats paper...")
+    }
+  } else if (playerSelection == "rock") {
+    if (computerSelection == "paper") {
+      alert("You lose, paper beats rock...")
+    } else {
+      alert("You win, rock beats scissors!")
+    }
+  } else {
+    if (computerSelection == "rock") {
+      alert("You lose, rock beats scissors...")
+    } else {
+      alert("You win, scissors beats paper!")
+    }
   }
 }
 
-console.log(computerSelection);
+console.log(playRound());
 
