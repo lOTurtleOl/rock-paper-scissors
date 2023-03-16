@@ -24,7 +24,7 @@ function getPlayerChoice() {
 // }; - This was my original code for the above and didn't work
 
 function playRound(playerSelection, computerSelection) {
-  if (playerSelection === computerSelection) {
+  if (playerSelection == computerSelection) {
     alert("It's a tie, try again");
   } else if (playerSelection == "paper") {
     if (computerSelection == "rock") {
@@ -47,5 +47,5 @@ function playRound(playerSelection, computerSelection) {
   }
 }
 
-console.log(playRound());
+console.log(playRound(playerSelection, computerSelection));
 
